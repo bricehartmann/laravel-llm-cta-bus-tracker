@@ -40,4 +40,8 @@ return [
         'url' => 'https://api.opencagedata.com/geocode/v1/json',
     ],
 
+    'ctabustracker' => [
+        'key' => env('CTABUSTRACKER_API_KEY'),
+        'url' => 'https://ctabustracker.com/bustime/api/v2',
+    ],
 ];
