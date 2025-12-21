@@ -4,7 +4,7 @@
         "Read more about it at https://getcomposer.org/doc/01-basic-usage.md#installing-dependencies",
         "This file is @generated automatically"
     ],
-    "content-hash": "e2c759239246d1e8ec4698212c3decfd",
+    "content-hash": "c53c849cf6a83fc981f8231280b8f05f",
     "packages": [
         {
             "name": "brick/math",
@@ -2702,6 +2702,101 @@
             "time": "2025-08-21T11:53:16+00:00"
         },
         {
+            "name": "plin-code/kml-parser",
+            "version": "v1.0.2",
+            "source": {
+                "type": "git",
+                "url": "https://github.com/plin-code/kml-parser.git",
+                "reference": "63601da08beee5cbfed72bde3e64840682f37b70"
+            },
+            "dist": {
+                "type": "zip",
+                "url": "https://api.github.com/repos/plin-code/kml-parser/zipball/63601da08beee5cbfed72bde3e64840682f37b70",
+                "reference": "63601da08beee5cbfed72bde3e64840682f37b70",
+                "shasum": ""
+            },
+            "require": {
+                "ext-libxml": "*",
+                "ext-simplexml": "*",
+                "ext-zip": "*",
+                "illuminate/contracts": "^11.0||^12.0",
+                "php": "^8.3",
+                "spatie/laravel-package-tools": "^1.16"
+            },
+            "require-dev": {
+                "larastan/larastan": "^3.0",
+                "laravel/pint": "^1.14",
+                "nunomaduro/collision": "^8.1.1",
+                "orchestra/testbench": "^10.0.0",
+                "pestphp/pest": "^3.0",
+                "pestphp/pest-plugin-arch": "^3.0",
+                "pestphp/pest-plugin-laravel": "^3.0",
+                "phpstan/extension-installer": "^1.3||^2.0",
+                "phpstan/phpstan-deprecation-rules": "^1.1||^2.0",
+                "phpstan/phpstan-phpunit": "^1.3||^2.0"
+            },
+            "type": "library",
+            "extra": {
+                "laravel": {
+                    "aliases": {
+                        "KmlParser": "PlinCode\\KmlParser\\Facades\\KmlParser"
+                    },
+                    "providers": [
+                        "PlinCode\\KmlParser\\KmlParserServiceProvider"
+                    ]
+                }
+            },
+            "autoload": {
+                "psr-4": {
+                    "PlinCode\\KmlParser\\": "src/",
+                    "PlinCode\\KmlParser\\Database\\Factories\\": "database/factories/"
+                }
+            },
+            "notification-url": "https://packagist.org/downloads/",
+            "license": [
+                "MIT"
+            ],
+            "authors": [
+                {
+                    "name": "Daniele Barbaro",
+                    "email": "barbaro.daniele@gmail.com",
+                    "role": "Developer"
+                },
+                {
+                    "name": "Daniele Barbaro",
+                    "email": "me@plincode.tech",
+                    "role": "Company"
+                }
+            ],
+            "description": "A Laravel package to parse KML and KMZ files",
+            "homepage": "https://github.com/plin-code/kml-parser",
+            "keywords": [
+                "PlinCode",
+                "danielebarbaro",
+                "geospatial",
+                "kml",
+                "kml-parser",
+                "kmz",
+                "laravel",
+                "laravel-kml",
+                "laravel-kmz",
+                "laravel-package",
+                "maps",
+                "plin-code"
+            ],
+            "support": {
+                "issues": "https://github.com/plin-code/kml-parser/issues",
+                "source": "https://github.com/plin-code/kml-parser/tree/v1.0.2"
+            },
+            "funding": [
+                {
+                    "url": "https://github.com/PlinCode",
+                    "type": "github"
+                }
+            ],
+            "time": "2025-04-12T16:22:12+00:00"
+        },
+        {
             "name": "psr/clock",
             "version": "1.0.0",
             "source": {
@@ -3389,6 +3484,67 @@
                 "source": "https://github.com/ramsey/uuid/tree/4.9.2"
             },
             "time": "2025-12-14T04:43:48+00:00"
+        },
+        {
+            "name": "spatie/laravel-package-tools",
+            "version": "1.92.7",
+            "source": {
+                "type": "git",
+                "url": "https://github.com/spatie/laravel-package-tools.git",
+                "reference": "f09a799850b1ed765103a4f0b4355006360c49a5"
+            },
+            "dist": {
+                "type": "zip",
+                "url": "https://api.github.com/repos/spatie/laravel-package-tools/zipball/f09a799850b1ed765103a4f0b4355006360c49a5",
+                "reference": "f09a799850b1ed765103a4f0b4355006360c49a5",
+                "shasum": ""
+            },
+            "require": {
+                "illuminate/contracts": "^9.28|^10.0|^11.0|^12.0",
+                "php": "^8.0"
+            },
+            "require-dev": {
+                "mockery/mockery": "^1.5",
+                "orchestra/testbench": "^7.7|^8.0|^9.0|^10.0",
+                "pestphp/pest": "^1.23|^2.1|^3.1",
+                "phpunit/php-code-coverage": "^9.0|^10.0|^11.0",
+                "phpunit/phpunit": "^9.5.24|^10.5|^11.5",
+                "spatie/pest-plugin-test-time": "^1.1|^2.2"
+            },
+            "type": "library",
+            "autoload": {
+                "psr-4": {
+                    "Spatie\\LaravelPackageTools\\": "src"
+                }
+            },
+            "notification-url": "https://packagist.org/downloads/",
+            "license": [
+                "MIT"
+            ],
+            "authors": [
+                {
+                    "name": "Freek Van der Herten",
+                    "email": "freek@spatie.be",
+                    "role": "Developer"
+                }
+            ],
+            "description": "Tools for creating Laravel packages",
+            "homepage": "https://github.com/spatie/laravel-package-tools",
+            "keywords": [
+                "laravel-package-tools",
+                "spatie"
+            ],
+            "support": {
+                "issues": "https://github.com/spatie/laravel-package-tools/issues",
+                "source": "https://github.com/spatie/laravel-package-tools/tree/1.92.7"
+            },
+            "funding": [
+                {
+                    "url": "https://github.com/spatie",
+                    "type": "github"
+                }
+            ],
+            "time": "2025-07-17T15:46:43+00:00"
         },
         {
             "name": "symfony/clock",
