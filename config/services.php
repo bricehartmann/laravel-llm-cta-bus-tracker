@@ -35,4 +35,9 @@ return [
         ],
     ],
 
+    'opencagedata' => [
+        'key' => env('OPENCAGEDATA_API_KEY'),
+        'url' => 'https://api.opencagedata.com/geocode/v1/json',
+    ],
+
 ];
