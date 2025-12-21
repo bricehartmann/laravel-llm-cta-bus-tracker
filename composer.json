@@ -16,7 +16,8 @@
         "laravel/tinker": "^2.10.1",
         "matanyadaev/laravel-eloquent-spatial": "^4.5",
         "meilisearch/meilisearch-php": "^1.16",
-        "plin-code/kml-parser": "^1.0"
+        "plin-code/kml-parser": "^1.0",
+        "prism-php/prism": "^0.99.2"
     },
     "require-dev": {
         "fakerphp/faker": "^1.23",
